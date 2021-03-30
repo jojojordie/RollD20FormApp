@@ -1,10 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using RollD20WindowsForm;
 
@@ -29,6 +24,11 @@ namespace WindowsFormsApp2
                 chart1.Series["NumberOfDiceRolls"].Points.Add(die.Result); 
             }
             chart1.Titles.Add("Number Of Dice Rolls Per Number");
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
